@@ -1,32 +1,42 @@
 $(document).ready(function () {
     
-    $('.toggleLink1 p').hide();
+    $('#expanded1').hide();
+    $('#expanded2').hide();
+    $('#expanded3').hide();
 
-    $('.toggleLink1 a').click(function () {
-        var toggleText = $('.toggleLink1 span');
+    $('#toggleLink1 a').click(function () {
+        var toggleText = $('#toggleLink1 span');
         var text = toggleText.text();
         if (text == 'more') {
             toggleText.text('less');
-            //$('.toggleLink1 p').show();
         } else {
             toggleText.text('more');
-            //$('.toggleLink1 p').hide();
         }
-        $('.toggleLink1 p').slideToggle();
+        $('#expanded1').slideToggle();
+    });
+
+    $('#toggleLink2 a').click(function () {
+        var toggleText2 = $('#toggleLink2 span');
+        var text2 = toggleText2.text();
+        if (text2 == 'more') {
+            toggleText2.text('less');
+        } else {
+            toggleText2.text('more');
+        }
+        $('#expanded2').slideToggle();
     });
     
-    $('.toggleLink2 p').hide();
-
-    $('.toggleLink2 a').click(function () {
-        var toggleText = $('.toggleLink2 span');
-        var text = toggleText.text();
-        if (text == 'more') {
-            toggleText.text('less');
+    $('#toggleLink3 a').click(function () {
+        var toggleText3 = $('#toggleLink3 span');
+        var text3 = toggleText3.text();
+        if (text3 == 'more') {
+            toggleText3.text('less');
         } else {
-            toggleText.text('more');
+            toggleText3.text('more');
         }
-        $('.toggleLink2 p').slideToggle();
+        $('#expanded3').slideToggle();
     });
-
+    
 });
+
 

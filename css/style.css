@@ -170,6 +170,7 @@ article a {
     font-weight: 300;
     float: right;
     clear: both;
+    display: block;
 }
 
 #toggleLink2{
@@ -177,6 +178,17 @@ article a {
     font-weight: 300;
     float: right;
     clear: both;
+    display: block;
+}
+
+#expanded1{
+    clear: both;
+    display: block;
+}
+
+#expanded2{
+    clear: both;
+    display: block;
 }
 
 article p {
